@@ -1,0 +1,20 @@
+
+
+dotnet restore
+
+
+dotnet build --configuration Debug       ......devlopment
+
+dotnet build --configuration Staging     ......Testing
+
+dotnet build --configuration Release     .....production
+
+
+list of sdks
+
+dotnet --list-sdks
+
+dotnet test --configuration Release
+
+
+dotnet publish -c Release -o ./publish
