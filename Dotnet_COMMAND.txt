@@ -18,3 +18,38 @@ dotnet test --configuration Release
 
 
 dotnet publish -c Release -o ./publish
+
+for linux 
+go to the publish file 
+and for specific port we have to export specifci path
+
+export ASPNETCORE_URLS=http://0.0.0.0:873
+
+
+then 
+dotnet bankguarantee_API.dll
+
+to run this above file in the backgroud we have to create the service which is the run forever
+
+cd /etc/systemd/system/
+
+here we have to create the file nachapi.service
+
+
+
+to start the service
+reload systemd and start the service
+
+
+sudo systemctl daemon-reload
+sudo systemctl start bank.service
+sudo systemctl enable bank.service
+sudo systemctl status bank.service
+
+
+
+
+
+
+
+
